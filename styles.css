@@ -2,12 +2,37 @@ html, body {
     height: 100%;
 }
 
-#board {
+.overall-container {
+    display: inline-grid;
+    grid-template-columns: 40% 60%;
+    width: 100%;
+}
+
+.buttons-container {
+    margin: 30% auto auto auto;
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.floor-button {
+    background-color: rgba(185, 179, 170, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 3px solid rgba(85, 80, 80, 0.8);
+}
+
+.board {
     width: 300px;
     height: 450px;
     background: rgb(101, 226, 235);
     margin: 50px auto auto auto;
-
 }
 
 .grid-container {
@@ -16,7 +41,6 @@ html, body {
     padding-left: 20px;
     padding-top: 20px;
     row-gap: 20px;
-    /* width: 150px; */
     width: 100%;
     height: 405px;
   }
@@ -39,6 +63,4 @@ html, body {
     font-size: 30px;
 }
 
-.elevator-hidden {
-
-}
+.elevator-hidden { }
