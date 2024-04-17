@@ -25,6 +25,26 @@ function floorButton(floor) {
         return;
     }
 
+    // move the elevator to the next floor
+    moveElevator(queue[0]);
+}
+
+function floorButtonSelected(button) {
+    // turn button green when selected
+    button.classList.add('floor-button-selected');
+}
+
+function floorButtonDeselected(button) {
+    // turn button white when deselected
+    button.classList.remove('floor-button-selected');
+}
+
+function timeForElevator(currentFloor, nextFloor) {
+    let time = Math.abs(currentFloor - nextFloor) + 1;
+    return time;
+}
+
+function moveElevator(floor) {
     let time = timeForElevator(currentFloor, floor);
 
     // remove the previous class
@@ -48,21 +68,6 @@ function floorButton(floor) {
     currentFloor = floor;
 }
 
-function floorButtonSelected(button) {
-    // turn button green when selected
-    button.classList.add('floor-button-selected');
-}
-
-function floorButtonDeselected(button) {
-    // turn button white when deselected
-    button.classList.remove('floor-button-selected');
-}
-
-function timeForElevator(currentFloor, nextFloor) {
-    let time = Math.abs(currentFloor - nextFloor) + 1;
-    return time;
-}
-
 function timer(floor, time) {
     setTimeout(() => {
         // deselect the button
@@ -71,6 +76,24 @@ function timer(floor, time) {
         // remove the floor from the queue
         queue.shift();
 
+        // if there are more floors in the queue
+        if (queue.length > 0) {
+
+            // if the elevator is moving up, sort the queue in ascending order
+            if (queue[0] > currentFloor) {
+                queue.sort((a, b) => a - b);
+            }
+            // if the elevator is moving down, sort the queue in descending order
+            else {
+                queue.sort((a, b) => b - a);
+            }
+
+            // move the elevator to the next floor
+            moveElevator(queue[0]);
+
+            return;
+        }
+            
         canMove = true;
 
     }, time * 1000);

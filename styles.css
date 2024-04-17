@@ -22,18 +22,20 @@ html, body {
     width: 100px;
     height: 100px;
     text-align: center;
-    font-size: 25px;
+    font-size: 35px;
+    font-family: "Lucida Bright", Georgia, serif;
     border-radius: 50%;
     cursor: pointer;
     border: 3px solid rgba(85, 80, 80, 0.8);
 }
 
 .floor-button-selected {
-    background-color: rgb(43, 192, 43);
+    background-color: rgb(212, 120, 0);
+    color: rgba(255, 215, 39, 0.8);
 }
 
 .floor-button:hover {
-    border: 3px solid rgba(0, 253, 63, 0.8);
+    border: 3px solid rgba(255, 215, 39, 0.8);
 }
 
 .board {
@@ -54,12 +56,16 @@ html, body {
   }
 
 .floor {
-    background-color: rgba(231, 152, 33, 0.8);
+    background-color: rgb(212, 120, 0);
     border: 1px solid rgba(0, 0, 0, 0.8);
     width: 50%;
     height: 100%;
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
+    font-family: "Lucida Bright", Georgia, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .elevator {
