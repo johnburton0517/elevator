@@ -64,3 +64,84 @@ html, body {
 }
 
 .elevator-hidden { }
+
+/* start on first floor */
+.elevator-1-to-2 {
+    animation-name: elevator-animation-1-to-2;
+    animation-duration: 3s;
+    /* keeps animation at final transformation */
+    animation-fill-mode: forwards;
+}
+
+@keyframes elevator-animation-1-to-2 {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-125%);
+    }
+}
+
+.elevator-1-to-3 {
+    animation-name: elevator-animation-1-to-3;
+    animation-duration: 3s;
+    /* keeps animation at final transformation */
+    animation-fill-mode: forwards;
+}
+
+@keyframes elevator-animation-1-to-3 {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-250%);
+    }
+}
+
+.elevator-1-to-4 {
+    animation-name: elevator-animation-1-to-4;
+    animation-duration: 3s;
+    /* keeps animation at final transformation */
+    animation-fill-mode: forwards;
+}
+
+@keyframes elevator-animation-1-to-4 {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-375%);
+    }
+}
+
+.elevator-1-to-5 {
+    animation-name: elevator-animation-1-to-5;
+    animation-duration: 3s;
+    /* keeps animation at final transformation */
+    animation-fill-mode: forwards;
+}
+
+@keyframes elevator-animation-1-to-5 {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-500%);
+    }
+}
+
+.elevator-1-to-6 {
+    animation-name: elevator-animation-1-to-6;
+    animation-duration: 3s;
+    /* keeps animation at final transformation */
+    animation-fill-mode: forwards;
+}
+
+@keyframes elevator-animation-1-to-6 {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-625%);
+    }
+}
