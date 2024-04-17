@@ -155,7 +155,7 @@ html, body {
 /* start on second floor */
 .elevator-2-to-1 {
     animation-name: elevator-animation-2-to-1;
-    animation-duration: 3s;
+    animation-duration: 2s;
     /* keeps animation at final transformation */
     animation-fill-mode: forwards;
 }
@@ -236,7 +236,7 @@ html, body {
 /* start on third floor */
 .elevator-3-to-1 {
     animation-name: elevator-animation-3-to-1;
-    animation-duration: 4s;
+    animation-duration: 3s;
     /* keeps animation at final transformation */
     animation-fill-mode: forwards;
 }
@@ -317,7 +317,7 @@ html, body {
 /* start on fourth floor */
 .elevator-4-to-1 {
     animation-name: elevator-animation-4-to-1;
-    animation-duration: 5s;
+    animation-duration: 4s;
     /* keeps animation at final transformation */
     animation-fill-mode: forwards;
 }
@@ -479,7 +479,7 @@ html, body {
 /* start on sixth floor */
 .elevator-6-to-1 {
     animation-name: elevator-animation-6-to-1;
-    animation-duration: 5s;
+    animation-duration: 6s;
     /* keeps animation at final transformation */
     animation-fill-mode: forwards;
 }
@@ -495,7 +495,7 @@ html, body {
 
 .elevator-6-to-2 {
     animation-name: elevator-animation-6-to-2;
-    animation-duration: 4s;
+    animation-duration: 5s;
     /* keeps animation at final transformation */
     animation-fill-mode: forwards;
 }
@@ -511,7 +511,7 @@ html, body {
 
 .elevator-6-to-3 {
     animation-name: elevator-animation-6-to-3;
-    animation-duration: 3s;
+    animation-duration: 4s;
     /* keeps animation at final transformation */
     animation-fill-mode: forwards;
 }
