@@ -28,6 +28,14 @@ html, body {
     border: 3px solid rgba(85, 80, 80, 0.8);
 }
 
+.floor-button-selected {
+    background-color: rgb(43, 192, 43);
+}
+
+.floor-button:hover {
+    border: 3px solid rgba(0, 253, 63, 0.8);
+}
+
 .board {
     width: 300px;
     height: 450px;
@@ -62,8 +70,6 @@ html, body {
     text-align: center;
     font-size: 30px;
 }
-
-.elevator-hidden { }
 
 /* start on first floor */
 .elevator-1-to-2 {

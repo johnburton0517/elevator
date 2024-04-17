@@ -11,3 +11,37 @@ function hideElevator() {
 }
 
 hideElevator();
+
+let currentFloor = 1;
+let previousClass = '';
+
+function floorButton(floor) {
+    floorButtonSelected(document.getElementById(`floor-${floor}-button`));
+
+    // do nothing if the floor is the same as the current floor
+    if (currentFloor === floor) {
+        return;
+    }
+
+    // get the elevator element
+    let elevator = document.getElementById('elevator-1');
+
+    // remove the previous class
+    if (previousClass !== '') {
+        elevator.classList.remove(previousClass);
+    }
+
+    // add class to move the elevator
+    elevator.classList.add(`elevator-${currentFloor}-to-${floor}`);    
+
+    // set the previous class
+    previousClass = `elevator-${currentFloor}-to-${floor}`;
+    
+    // set the current floor
+    currentFloor = floor;
+}
+
+function floorButtonSelected(button) {
+    // turn button green when selected
+    button.classList.add('floor-button-selected');
+}
